@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biokewirausahaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <img id="logo-img" src="Logo.png" alt="Logo PEMIRA" />
+                    <span>PEMIRA 2025</span>
+                </div>
+                <div class="menu">
+                    <a href="index.html" class="jurusan-btn">Sistem Informasi</a>
+                    <a href="TeknologiInformasi.html" class="jurusan-btn">Teknologi Informasi</a>
+                    <a href="Pariwisata.html" class="jurusan-btn">Pariwisata</a>
+                    <a href="Manajemen.html" class="jurusan-btn">Manajemen</a>
+                    <a href="Akuntansi.html" class="jurusan-btn">Akuntansi</a>
+                    <a href="BioKewirausahaan.html" class="jurusan-btn">Biokewirausahaan</a>
+                    <a href="Vokasi.html" class="jurusan-btn">Vokasi</a>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="running-text-container">
+        <div class="running-text">
+            <span>PEMILIHAN KETUA & WAKIL KETUA HIMA BIOKEWIRAUSAHAAN</span>
+            <span>PEMILIHAN KETUA & WAKIL KETUA HIMA BIOKEWIRAUSAHAAN</span>
+            <span>PEMILIHAN KETUA & WAKIL KETUA HIMA BIOKEWIRAUSAHAAN</span>
+        </div>
+    </div> 
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="section">
+            <div class="text-center">
+                <h1>PEMILIHAN KETUA & WAKIL KETUA HIMA BIOKEWIRAUSAHAAN</h1>
+            </div>
+            
+            <div class="cards">
+                <!-- PASLON 1 -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="img-wrapper">
+                            <img src="01_HASYA NABILA_MUHAMAD REKSI MARKUAD .png">
+                        </div>
+                        <h2>Paslon No. 1</h2>
+                        <p>Hasya Nabila & Muhamad Reksi Markuad</p>
+
+                        <div class="vote-section">
+                          <div class="vote-row">
+                            <span>Suara Sah</span>
+                            <div class="counter-group">
+                              <button onclick="updateCount('p1',-1)">-</button>
+                              <span id="p1" class="counter">0</span>
+                              <button onclick="updateCount('p1',1)">+</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="total-box">
+                          <div class="total-row">
+                            <span>Total Suara</span>
+                            <span id="p1-total">0</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+                                <!-- PASLON 2 -->
+                                <div class="card">
+                                        <div class="card-body">
+                                                <div class="img-wrapper">
+                                                        <img src="02_SALWA DWI ROHMAH_REFKY RIZKYA RAY PRADIKA.jpg">
+                                                </div>
+                                                <h2>Paslon No. 2</h2>
+                                                <p>Salwa Dwi Rohmah & Refky Rizkya Ray Pradika</p>
+
+                                                <div class="vote-section">
+                                                    <div class="vote-row">
+                                                        <span>Suara Sah</span>
+                                                        <div class="counter-group">
+                                                            <button onclick="updateCount('p2',-1)">-</button>
+                                                            <span id="p2" class="counter">0</span>
+                                                            <button onclick="updateCount('p2',1)">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="total-box">
+                                                    <div class="total-row">
+                                                        <span>Total Suara</span>
+                                                        <span id="p2-total">0</span>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- PASLON 3 -->
+                                <div class="card">
+                                        <div class="card-body">
+                                                <div class="img-wrapper">
+                                                        <img src="03_BERLIANA MELIANI_SHAFWAH HANIFAH.jpg">
+                                                </div>
+                                                <h2>Paslon No. 3</h2>
+                                                <p>Berliana Meliani & Shafwah Hanifah</p>
+
+                                                <div class="vote-section">
+                                                    <div class="vote-row">
+                                                        <span>Suara Sah</span>
+                                                        <div class="counter-group">
+                                                            <button onclick="updateCount('p3',-1)">-</button>
+                                                            <span id="p3" class="counter">0</span>
+                                                            <button onclick="updateCount('p3',1)">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="total-box">
+                                                    <div class="total-row">
+                                                        <span>Total Suara</span>
+                                                        <span id="p3-total">0</span>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- SURAT TIDAK SAH -->
+                        <div class="single-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 style="text-align:center;">SURAT TIDAK SAH</h2>
+
+                                    <div class="vote-section">
+                                        <div class="vote-row vote-center">
+                                            <div class="counter-group">
+                                                <button onclick="updateCount('tidakSah',-1)">-</button>
+                                                <span id="tidakSah" class="counter">0</span>
+                                                <button onclick="updateCount('tidakSah',1)">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="total-box">
+                                        <span>Total Surat Tidak Sah</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- REKAP -->
+                        <div class="rekap">
+                            <h2>TOTAL SUARA</h2>
+                            <div class="rekap-grid">
+                                <div class="rekap-box total-sah">
+                                    <p>Total Suara Sah</p>
+                                    <p id="totalSah">0</p>
+                                </div>
+                                <div class="rekap-box total-tidak-sah">
+                                    <p>Total Tidak Sah</p>
+                                    <p id="totalTidakSah">0</p>
+                                </div>
+                                <div class="rekap-box total-keseluruhan">
+                                    <p>Total Keseluruhan</p>
+                                    <p id="totalKeseluruhan">0</p>
+                                </div>
+                            </div>
+                        </div>
+            
+            <div class="save-wrapper">
+                <button id="saveBtn">Save Suara</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#" class="logo-footer">
+                <img src="Logo Himasifo.png" alt="Logo Himpunan Mahasiswa" />
+            </a>
+            <div class="social">
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+                </a>
+                <span>@himasifo.ibik</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
